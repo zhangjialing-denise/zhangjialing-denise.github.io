@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实验5-2</title>
+<style type="text/css">
+     div{
+        width:400px;
+        margin:0 auto;
+		margin-top: 200px;
+        }
+     img
+       {
+        width:150px;
+        }
+</style>
+<script type="text/javascript">
+        function light_open()
+        {
+            let light_image=document.getElementById("img");
+            light_image.src="灯.png";
+        }
+        function light_close()
+        {
+            let light_image=document.getElementById("img");
+            light_image.src="灯.png";
+        }
+    }
+</script>
+</head>
+<body>
+	<div class="box">
+	<img id="img" src="灯.png" alt="" height="180" width="109"/> <br>
+    <button onclick="light-open()" >开灯</button>
+	<button onclick="light-close()" >关灯</button>
+</div>
+</body>
+</html>
