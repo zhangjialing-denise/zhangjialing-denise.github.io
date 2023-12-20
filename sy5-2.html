@@ -2,37 +2,51 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>实验5-2</title>
-<style type="text/css">
-     div{
-        width:400px;
-        margin:0 auto;
-		margin-top: 200px;
-        }
-     img
-       {
-        width:150px;
-        }
-</style>
-<script type="text/javascript">
-        function light_open()
-        {
-            let light_image=document.getElementById("img");
-            light_image.src="灯.png";
-        }
-        function light_close()
-        {
-            let light_image=document.getElementById("img");
-            light_image.src="灯.png";
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开关灯</title>
+<style>
+    body {
+      text-align: center;
     }
-</script>
+
+    #按钮容器 {
+      margin-top: 20px;
+    }
+
+    #按钮容器 input {
+      margin: 0 5px;  /* 调整按钮间距 */
+    }
+  </style>
+
+  <script>
+    // 定义切换灯光的函数
+    function 切换灯光(颜色) {
+      // 获取图片元素
+      var 灯图片 = document.getElementById("灯图片");
+
+      // 设置图片的 src 属性为对应颜色的图片
+      灯图片.src = 颜色 + "灯.png";
+    }
+  </script>
 </head>
+
 <body>
-	<div class="box">
-	<img id="img" src="灯.png" alt="" height="180" width="109"/> <br>
-    <button onclick="light-open()" >开灯</button>
-	<button onclick="light-close()" >关灯</button>
-</div>
+  <h1>开关灯</h1>
+
+<!-- 灯容器包含图片和按钮 -->
+  <div id="灯容器">
+    <!-- 灰色图片是默认显示的 -->
+    <img id="灯图片" src="灯.png" alt="灯" width="200" height="300">
+
+    <!-- 按钮容器，紧挨着图片两侧 -->
+    <div id="按钮容器">
+      <!-- 开灯按钮 -->
+      <input type="button" value="开灯" onclick="切换灯光('黄色')">
+
+      <!-- 关灯按钮 -->
+      <input type="button" value="关灯" onclick="切换灯光('灰色')">
+    </div>
+  </div>
 </body>
+
 </html>
