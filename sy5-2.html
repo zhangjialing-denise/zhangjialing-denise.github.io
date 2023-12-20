@@ -25,7 +25,7 @@
       var 灯图片 = document.getElementById("灯图片");
 
       // 设置图片的 src 属性为对应颜色的图片
-      灯图片.src = 颜色 + "灯.png";
+      灯图片.src = 颜色 + ".png";
     }
   </script>
 </head>
@@ -41,10 +41,10 @@
     <!-- 按钮容器，紧挨着图片两侧 -->
     <div id="按钮容器">
       <!-- 开灯按钮 -->
-      <input type="button" value="开灯" onclick="切换灯光('黄色')">
+      <input type="button" value="开灯" onclick="切换灯光('亮灯')">
 
       <!-- 关灯按钮 -->
-      <input type="button" value="关灯" onclick="切换灯光('灰色')">
+      <input type="button" value="关灯" onclick="切换灯光('灯')">
     </div>
   </div>
 </body>
