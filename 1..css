@@ -1,0 +1,112 @@
+@charset "utf-8";
+body{
+		padding: 0;
+		margin: 0 auto;
+		background:url("按钮.jpg");
+	    background-size: 1530px;		
+}	
+	.h_title{
+		font-size:100px;
+		line-height:34px;
+		font-weight:bolder;
+		text-align:center;
+		padding:0 0 40px;
+		font-family: 宋体;
+	    margin-top: 160px;
+		color:#FCFDED;
+	}
+	.abstract{
+	font-family: 宋体;
+	margin-top: -120px;
+   color:#FCFDED;
+	font-size:30px;
+	font-weight:bolder;
+	text-align:center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.line{
+    width: 100%;
+    border-right:2px solid #888;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.animation{
+    animation: grow 3.5s steps(30) 1s normal both,
+    blink 500ms steps(30)infinite normal;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes grow{
+    from{
+        width: 0;
+    }
+    to{
+        width: 264px;
+    }
+}
+@keyframes blink {
+    from {
+        border-right-color: #888;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+	.character_list{
+		width:1200px;
+		height:220px;
+		position:relative;
+		zoom:1;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+ 	.character_list li{
+	
+		display:inline;
+		width:280px;
+		text-align:center;
+		margin:0 60px 40px;
+		position:relative;
+	}
+ 	.character_list li a{
+		display:block;
+		text-decoration: none;
+	}
+ 	.character_list li img{
+		width:168px;
+		display:inline-block;
+		border-radius:10em;
+}
+ 	.character_list li b{
+		font-size:25px;
+		display:block;
+		font-weight:normal;
+		margin-top:20px;
+		font-family: 华文彩云;
+		color:#FCFDED;
+	}
+ 	.character_list li a:hover {
+    	cursor: pointer;
+   		 position: relative;
+   		 text-align: center;
+    	top: -16%;
+   		 transform: translate(0px, -16%);
+    	transition: .2s all;
+}
+	.character_list li a:hover img{
+		width:168px;
+		transition: 0.2s all;
+		box-shadow:6px 9px 10px rgba(0,0,0,0.2); 
+	}
+	.character_list li a:hover b{
+		padding:0;
+		font-weight:bold;
+	}
+/* CSS Document */
+
