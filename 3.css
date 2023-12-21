@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS @charset "utf-8";
+/* CSS Document */
+body, div, ul, li{
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	display: block;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+	body {
+		background: url("按钮.jfif") center 0 repeat;
+		background-size: 1530px
+}
+	.nav_bg{
+	width: 100%;
+    background-color:#FDDADA;
+	height: 60px;
+		}
+.menu {
+    width: 1200px;
+    background-color:#FDDADA;
+	height: 60px;
+    margin: 0 auto;
+}
+.menu li {
+    position: relative;
+    float   : left;
+    width: 150px;
+	height: 50px;  
+}
+.menu li a {
+    display: flex;
+    justify-content: center;
+    font-display: row;
+    line-height: 60px;
+    width: 160px;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+	font-size: 20px !important;
+    color : #000 !important;
+    font-weight  : normal !important;
+}
+.menu li:hover a {
+    background-color:antiquewhite;
+}
+.sub {
+    position: absolute;
+    top : 60px;
+    left: 0;
+    width : 160px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+li:hover ul.sub {
+    opacity: 1;
+    height : auto;
+}
+.sub li {
+    float: none;
+    border-bottom: 1px solid #fff;	
+}
+.sub li:last-child {
+    border-bottom: none;
+}
+.sub a {
+    font-size: 20px !important;
+    color           : #000 !important;
+    font-weight     : normal !important;
+    line-height     : 2 !important;
+    height: 50px !important; 
+    width           : 160px !important;
+}
+.sub li:hover a {
+    background-color: #FFD7D5;
+}
+
