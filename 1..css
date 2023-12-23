@@ -2,8 +2,8 @@
 body{
 		padding: 0;
 		margin: 0 auto;
-		background:url("按钮.jfif");
-	    background-size: 1530px;		
+	    background-size: 1530px;
+	     color: darksalmon;
 }	
 	.h_title{
 		font-size:100px;
